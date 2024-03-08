@@ -23,10 +23,9 @@ requestObject = {
     ],
   },
 };
-
-console.log(
-  `hello ${requestObject.response.results[0].name}, your email is ${requestObject.response.results[0].email} `
-);
+requestObject.response.results.forEach((result) => {
+  console.log(`hello ${result.name}, your email is ${result.email} `);
+});
 
 //challenge2
 
